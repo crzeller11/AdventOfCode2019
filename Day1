@@ -1,0 +1,17 @@
+def find_fuel_required(mass):
+	fuel_req = math.floor(mass / 3) - 2
+	return fuel_req
+  
+def part1():
+  input = null # FIXME: get method for reading in from text file
+	for line in input:
+		fuel_req = find_fuel_required(line)
+		sum += fuel_req
+	print("Sum total of fuel requirements: ", sum)
+
+
+def main():
+  part1()
+  
+if __name__ == '__main__':
+	main()
