@@ -3,7 +3,8 @@ def find_fuel_required(mass):
 	return fuel_req
   
 def part1():
-  input = null # FIXME: get method for reading in from text file
+	input = null # FIXME: get method for reading in from text file
+	sum = 0
 	for line in input:
 		fuel_req = find_fuel_required(line)
 		sum += fuel_req
